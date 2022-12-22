@@ -10,7 +10,7 @@ function App() {
   ]);
 
   const goalHandler = newGoal => {
-    setGoalList(goalList.concat(newGoal))
+    setGoalList(prev => prev.concat(newGoal));
   }
 
   return (
